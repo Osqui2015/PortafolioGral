@@ -242,7 +242,7 @@ img {
   margin-bottom: 3.5rem;
 }
 
-.nav_name{
+.nav__name{
   position: relative;
   width: max-content;
   margin: 0 auto 3rem;
@@ -293,7 +293,7 @@ img {
 .nav__link:hover{
   color: var(--white-color);
 }
--nav__link:hover::after{
+.nav__link:hover::after{
   width: 25%;
 }
 
