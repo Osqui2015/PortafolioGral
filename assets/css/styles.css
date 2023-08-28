@@ -142,7 +142,7 @@ body.dark-theme{
   color: var(--white-color);
 }
 
-.dark-theme .projects_card:hover{
+.dark-theme .projects__card:hover{
   background-color: var(--body-color);
 }
   .dark-theme :is(.contact__mail, .contact__input, .contact__label){
@@ -1127,6 +1127,9 @@ body.dark-theme{
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-wi) {
+  
+}
 
 
 /* For medium devices */
