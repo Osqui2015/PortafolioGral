@@ -38,6 +38,30 @@ const shadowHeader = () => {
 window.addEventListener('scroll', shadowHeader)
 
 /*=============== EMAIL JS ===============*/
+const contactForm = document .getElementById('contact-form');
+const contactMessage = document.getElementById('contact-message');
+
+
+const sendEmail = (e) => {
+    e.preventDefault()
+    // serviceid templateid form publikey
+    emailjs.sendForm('service_wsztzh8','template_f3j3yxe','#contact-form','8JWu9aAm-ziWMA2zz')
+    .then (() =>{
+
+        contactMessage.textContent = 'Mensaje Enviado'
+
+        setTimeout(() => {
+            contactMessage.textContent = '' 
+        }, 5000);
+
+        contactForm.reset()
+
+    }, () => {
+        contactMessage.textContent = 'Mensaje Error Al enviar'
+    })
+}
+
+contactForm.addEventListener('submit', sendEmail)
 
 
 /*=============== SHOW SCROLL UP ===============*/ 

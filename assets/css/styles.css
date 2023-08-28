@@ -983,7 +983,7 @@ body.dark-theme
   background-color: var(--black-color-Light) ;
   padding: 6px;
   color: var(--white-color);
-  font-size: 1.25rem;
+  font-size: 2rem;
   display: grid;
   place-items: center;
   transition: background-color .3s;
@@ -991,6 +991,14 @@ body.dark-theme
 
 .contact__social-link:hover{
   background-color: var(--first-color);
+}
+
+.contact__message{
+  color: var(--white-color);
+  font-size: var(--small-font-size) ;
+  position: absolute;
+  bottom: -3rem;
+  left: 0;
 }
 
 
