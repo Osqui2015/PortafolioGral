@@ -107,7 +107,7 @@ img {
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
   --first-color: hsl(14, 80%, 50%);
-  --black-color: hsl(0, 0%, 18%);
+  --black-color: hsl(0, 11%, 87%);
   --black-color-light: hsl(0, 0%, 30%);
   --title-color: hsl(0, 0%,95%);
   --text-color: hsl(0, 0%, 70%);
@@ -1034,7 +1034,7 @@ body.dark-theme{
 .contact__social-link{
   background-color: var(--black-color-Light) ;
   padding: 6px;
-  color: var(--white-color);
+  color: var(--black-color);
   font-size: 2rem;
   display: grid;
   place-items: center;
@@ -1043,13 +1043,14 @@ body.dark-theme{
 
 .contact__social-link:hover{
   background-color: var(--first-color);
+  color: var(--white-color);
 }
 
 .contact__message{
   color: var(--white-color);
   font-size: var(--small-font-size) ;
   position: absolute;
-  bottom: -3rem;
+  bottom: -1.25rem;
   left: 0;
 }
 
